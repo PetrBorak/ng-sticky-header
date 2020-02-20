@@ -1,0 +1,21 @@
+{
+  "name": "@petrborak/ng-sticky-header",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^8.1.3",
+    "@angular/core": "^8.1.3"
+  },
+  "main": "bundles/borak-ng-sticky-header.umd.js",
+  "module": "fesm5/borak-ng-sticky-header.js",
+  "es2015": "fesm2015/borak-ng-sticky-header.js",
+  "esm5": "esm5/borak-ng-sticky-header.js",
+  "esm2015": "esm2015/borak-ng-sticky-header.js",
+  "fesm5": "fesm5/borak-ng-sticky-header.js",
+  "fesm2015": "fesm2015/borak-ng-sticky-header.js",
+  "typings": "borak-ng-sticky-header.d.ts",
+  "metadata": "borak-ng-sticky-header.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}
