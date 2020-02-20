@@ -17,7 +17,21 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "sticky-header-angular": [
+        "dist/sticky-header-angular"
+      ],
+      "sticky-header-angular/*": [
+        "dist/sticky-header-angular/*"
+      ],
+      "ng-sticky-header": [
+        "dist/ng-sticky-header"
+      ],
+      "ng-sticky-header/*": [
+        "dist/ng-sticky-header/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

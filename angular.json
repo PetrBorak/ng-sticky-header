@@ -119,6 +119,41 @@
           }
         }
       }
+    },
+    "ng-sticky-header": {
+      "projectType": "library",
+      "root": "projects/ng-sticky-header",
+      "sourceRoot": "projects/ng-sticky-header/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ng-sticky-header/tsconfig.lib.json",
+            "project": "projects/ng-sticky-header/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng-sticky-header/src/test.ts",
+            "tsConfig": "projects/ng-sticky-header/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-sticky-header/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ng-sticky-header/tsconfig.lib.json",
+              "projects/ng-sticky-header/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "sticky-header"
 }
